@@ -1,0 +1,12 @@
+
+.DS_Store
+
+*.xml
+
+*.iml
+
+*.xml
+
+*.codekit
+
+.idea/vcs.xml
