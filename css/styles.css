@@ -1,18 +1,47 @@
-h1 {
-  font-weight: lighter;
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
-h3 {
+#quote {
+  text-align: right;
   font-weight: lighter;
+  padding: 10px;
 }
-.container {
-  border: 1px, solid, black;
+#author {
+  text-align: right;
+  font-weight: lighter;
+  padding: 10px;
+}
+button {
+  float: right;
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border-style: solid;
+  border-color: #4d4d4d;
+  border-width: 1px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #808080;
+  color: white;
 }
 .center {
-  padding-top: auto;
-  padding-bottom: auto;
-  height: 50%
-    margin: auto;
-  width: 50%;
-  border: 1px solid black;
-  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.box {
+  margin: auto;
+  width: 60%;
+}
+@media (max-width: 700px) {
+  .box {
+    width: 90%;
+  }
 }
