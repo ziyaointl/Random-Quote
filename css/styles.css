@@ -19,16 +19,18 @@ button {
   padding: 10px;
   background-color: white;
   border-style: solid;
-  border-color: #4d4d4d;
-  border-width: 1px;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  border-color: #000000;
+  border-width: 2px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #000000;
 }
 button:hover {
-  background-color: #808080;
+  background-color: #000000;
   color: white;
+  font-weight: lighter;
 }
 .center {
   position: absolute;
