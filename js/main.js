@@ -46,12 +46,12 @@ var quoteList = [
 		"author": "-C.A.R. Hoare"
 	},
 	{
-		"quote": "Software suppliers are trying to make their software packages more ‘user-friendly’…  Their best approach so far has been to take all the old brochures and stamp the words ‘user-friendly’ on the cover.",
+		"quote": "Software suppliers are trying to make their software packages more \"user-friendly\". Their best approach so far has been to take all the old brochures and stamp the words \"user-friendly\" on the cover.",
 		"author": "-Bill Gates"
 	},
 	{
-		"quote": "Don’t worry if it doesn’t work right.  If everything did, you’d be out of a job.",
-		"author": "-Mosher’s Law of Software Engineering"
+		"quote": "Don't worry if it doesn't work right.  If everything did, you'd be out of a job.",
+		"author": "-Mosher's Law of Software Engineering"
 	},
 	{
 		"quote": "Measuring programming progress by lines of code is like measuring aircraft building progress by weight.",
@@ -62,21 +62,21 @@ var quoteList = [
 		"author": "-Anonymous"
 	},
 	{
-		"quote": "I think Microsoft named .Net so it wouldn’t show up in a Unix directory listing.",
+		"quote": "I think Microsoft named .Net so it wouldn't show up in a Unix directory listing.",
 		"author": "-Oktal"
 	},
 ];
 
 function getQuote() {
+	var twitterBase = "https://twitter.com/intent/tweet?text=";
 	var tempIndex = getRandomNumber(quoteList.length);
-	console.log(tempIndex);
-	while (lastIndex == tempIndex) {
+	while (lastIndex === tempIndex) {
 		var tempIndex = getRandomNumber(quoteList.length);
-		console.log(tempIndex);
 	}
 	lastIndex = tempIndex;
 	document.getElementById("quote").innerHTML = quoteList[tempIndex].quote;
 	document.getElementById("author").innerHTML = quoteList[tempIndex].author;
+	document.getElementById("twitter-share-button").href = twitterBase + quoteList[tempIndex].quote + "%0A" + quoteList[tempIndex].author;
 }
 
 function getRandomNumber(max) {
