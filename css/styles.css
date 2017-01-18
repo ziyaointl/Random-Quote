@@ -47,3 +47,15 @@ button:hover {
     width: 90%;
   }
 }
+.icon {
+  fill: black;
+  stroke: black;
+  stroke-width: 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.icon:hover {
+  stroke-width: 30px;
+}
